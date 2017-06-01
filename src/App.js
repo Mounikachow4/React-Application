@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
-import {TodoForm, TodoList} from './Components/Todo'
+import {TodoForm, TodoList} from './components/todo'
 
 class App extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
           <h2>React Todos</h2>
         </div>
         <div className="Todo-App">
